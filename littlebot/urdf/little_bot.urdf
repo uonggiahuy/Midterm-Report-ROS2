@@ -1,0 +1,379 @@
+<robot name="little_bot">
+    <link name="base_link">
+        <inertial>
+            <origin xyz="0.002379389645183935 1.5870941312697752e-17 0.014613632958144862" rpy="0.0 0.0 0.0" />
+            <mass value="1.214879905211409" />
+            <inertia ixx="0.004193891160988535" iyy="0.00417277261462651" izz="0.008141070670075393" ixy="-1.4283119134593308e-15" iyz="-4.894818460227988e-19" ixz="-6.374008005996398e-05" />
+        </inertial>
+        <visual name="base_link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="base_link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="lidar">
+        <inertial>
+            <origin xyz="0.0 4.615770966296263e-18 0.0040000000000000036" rpy="0.0 -0.0 0.0" />
+            <mass value="0.032634864485490744" />
+            <inertia ixx="1.0168479859270376e-05" iyy="1.0168479859270986e-05" izz="1.9988854497362814e-05" ixy="-3.7658764995285325e-21" iyz="4.368416739453094e-21" ixz="-2.710505431213761e-20" />
+        </inertial>
+        <visual name="lidar_visual">
+            <origin xyz="-0.055 0.0 -0.045" rpy="0.0 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/lidar.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="lidar_collision">
+            <origin xyz="-0.055 0.0 -0.045" rpy="0.0 -0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/lidar.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="rear_left_wheel-v1_Component3">
+        <inertial>
+            <origin xyz="3.102295472068642e-08 -2.9861664205750358e-05 3.090283746010059e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.06587225705261189" />
+            <inertia ixx="1.851365021844267e-05" iyy="2.8353314654872332e-05" izz="1.8513608276880644e-05" ixy="1.157160629244632e-12" iyz="9.165735255197195e-13" ixz="-3.3038868068788775e-11" />
+        </inertial>
+        <visual name="rear_left_wheel-v1_Component3_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/rear_left_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="rear_left_wheel-v1_Component3_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/rear_left_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision> 
+    </link>
+    <link name="front_right_wheel-v1_Component3">
+        <inertial>
+            <origin xyz="3.102295472068309e-08 -2.9861664205750358e-05 3.09028374601006e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.06587225705261189" />
+            <inertia ixx="1.8513650218442887e-05" iyy="2.8353314654872224e-05" izz="1.8513608276880427e-05" ixy="1.1571605219168365e-12" iyz="9.165735119671963e-13" ixz="-3.30388680620125e-11" />
+        </inertial>
+        <visual name="front_right_wheel-v1_Component3_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/front_right_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="front_right_wheel-v1_Component3_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/front_right_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision> 
+    </link>
+    <link name="rear_right_wheel-v1_Component3">
+        <inertial>
+            <origin xyz="3.102295472067023e-08 -2.986166420575019e-05 3.090283746006602e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.06587225705261189" />
+            <inertia ixx="1.8513650218442847e-05" iyy="2.8353314654871743e-05" izz="1.851360827688088e-05" ixy="1.1571606425349658e-12" iyz="9.16573558587882e-13" ixz="-3.303886800259618e-11" />
+        </inertial>
+        <visual name="rear_right_wheel-v1_Component3_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/rear_right_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="rear_right_wheel-v1_Component3_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/rear_right_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision> 
+    </link>
+    <link name="front_left_wheel-v1_Component3">
+        <inertial>
+            <origin xyz="3.1022954720686394e-08 -2.986166420575033e-05 3.090283746010059e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.06587225705261189" />
+            <inertia ixx="1.8513650218442636e-05" iyy="2.8353314654872176e-05" izz="1.851360827688021e-05" ixy="1.1571604124041954e-12" iyz="9.165735255197186e-13" ixz="-3.303886806201248e-11" />
+        </inertial>
+        <visual name="front_left_wheel-v1_Component3_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/front_left_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="front_left_wheel-v1_Component3_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/front_left_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="imu">
+        <inertial>
+            <origin xyz="0.0 0.0 0.0010000000000000002" rpy="0.0 -0.0 0.0" />
+            <mass value="0.0012720000000000001" />
+            <inertia ixx="4.2823999999999994e-08" iyy="9.582400000000004e-08" izz="1.3780000000000003e-07" ixy="0.0" iyz="2.9420910152566647e-24" ixz="0.0" />
+        </inertial>
+        <visual name="imu_visual">
+            <origin xyz="0.0 -2.0816681711721684e-19 0.0" rpy="3.141592653589792 5.551120747954053e-17 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/imu.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="imu_collision">
+            <origin xyz="0.0 -2.0816681711721684e-19 0.0" rpy="3.141592653589792 5.551120747954053e-17 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/imu.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="z_rail_link-v1">
+        <inertial>
+            <origin xyz="-0.02474873999999618 0.024748739999999853 0.028304837586992166" rpy="0.0 -0.0 0.0" />
+            <mass value="0.14018305939730816" />
+            <inertia ixx="0.00021316725527848845" iyy="0.0002003118947012932" izz="7.963306166711707e-05" ixy="-1.4895652940352651e-18" iyz="-1.3920894350408395e-18" ixz="1.6046192152785466e-17" />
+        </inertial>
+        <visual name="z_rail_link-v1_visual">
+            <origin xyz="-0.024748740000000203 0.024748739999999856 -0.0025000000000001245" rpy="-3.978567994365925e-15 1.644517855226035e-15 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/z_rail_link-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <!-- Loi collision khien tay may khong nhac len duoc-->
+        <!--<collision name="z_rail_link-v1_collision">
+            <origin xyz="-0.024748740000000203 0.024748739999999856 -0.0025000000000001245" rpy="-3.978567994365925e-15 1.644517855226035e-15 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/z_rail_link-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>-->
+    </link>
+    <link name="z_slider_link-v1">
+        <inertial>
+            <origin xyz="0.07262986023269905 -0.00974999998285376 0.0534318937632977" rpy="0.0 -0.0 0.0" />
+            <mass value="0.018108528734218303" />
+            <inertia ixx="1.2893174146101334e-06" iyy="3.526773443850688e-05" izz="3.610135959525014e-05" ixy="-1.7036994834443656e-14" iyz="-1.109824919139947e-15" ixz="-1.2972991255317422e-06" />
+        </inertial>
+        <visual name="z_slider_link-v1_visual">
+            <origin xyz="0.06499999985098813 -0.009750000000000208 0.04950624543758318" rpy="2.220446049250313e-16 -4.2622790524526534e-16 -2.685647149300691e-33" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/z_slider_link-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <!--<collision name="z_slider_link-v1_collision">
+            <origin xyz="0.06499999985098813 -0.009750000000000208 0.04950624543758318" rpy="2.220446049250313e-16 -4.2622790524526534e-16 -2.685647149300691e-33" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/z_slider_link-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>-->
+    </link>
+    <link name="arm_link-v1">
+        <inertial>
+            <origin xyz="0.05147700960036703 0.028908753362395727 0.014749999999999984" rpy="0.0 -0.0 0.0" />
+            <mass value="0.03346092824173876" />
+            <inertia ixx="1.4135709947944155e-05" iyy="4.0639558219620134e-05" izz="5.18908004863961e-05" ixy="-2.168010812160753e-05" iyz="3.745579692758516e-18" ixz="6.659373031313309e-18" />
+        </inertial>
+        <visual name="arm_link-v1_visual">
+            <origin xyz="0.0493165864898511 0.019408416875444062 0.014749999999999992" rpy="-1.5707963267948943 3.654616716425319e-15 0.5121588783581007" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/arm_link-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <!--<collision name="arm_link-v1_collision">
+            <origin xyz="0.0493165864898511 0.019408416875444062 0.014749999999999992" rpy="-1.5707963267948943 3.654616716425319e-15 0.5121588783581007" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/arm_link-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>-->
+    </link>
+    <link name="camera-v1">
+        <inertial>
+            <origin xyz="-2.6645352591003756e-17 0.0 0.0075" rpy="0.0 -0.0 0.0" />
+            <mass value="0.044156249999999994" />
+            <inertia ixx="3.127734375000168e-06" iyy="1.6558593750001273e-06" izz="3.127734374999992e-06" ixy="1.3361336748022597e-36" iyz="2.4673473703533693e-36" ixz="0.0" />
+        </inertial>
+        <visual name="camera-v1_visual">
+            <origin xyz="0.000249999999999968 0.0 0.0" rpy="-7.888609052210118e-31 2.914335439641036e-16 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/camera-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="camera-v1_collision">
+            <origin xyz="0.000249999999999968 0.0 0.0" rpy="-7.888609052210118e-31 2.914335439641036e-16 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/camera-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="base_link_lidar_joint" type="fixed">
+        <origin xyz="0.055 0.0 0.045" rpy="0.0 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="lidar" />
+    </joint>
+    <!-- Sua loi trong rviz bang cach doi tu continuos sang fixed và dung thu vien planar-->
+    <joint name="base_link_rear_left_wheel_joint" type="fixed">
+        <origin xyz="-0.07 0.13 0.0125" rpy="-1.5707963267948966 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="rear_left_wheel-v1_Component3" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="base_link_front_right_wheel_joint" type="fixed">
+        <origin xyz="0.07 -0.13 0.0125" rpy="1.5707963267948966 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="front_right_wheel-v1_Component3" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="base_link_rear_right_wheel_joint" type="fixed">
+        <origin xyz="-0.07 -0.13 0.0125" rpy="1.5707963267948966 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="rear_right_wheel-v1_Component3" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="base_link_front_left_wheel_joint" type="fixed">
+        <origin xyz="0.07 0.13 0.0125" rpy="-1.5707963267948966 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="front_left_wheel-v1_Component3" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="base_link_imu_joint" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="3.141592653589793 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="imu" />
+    </joint>
+    <joint name="base_link_pillar_fixed_joint" type="fixed">
+        <origin xyz="-0.01775126 -0.024748739999999998 0.07" rpy="0.0 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="z_rail_link-v1" />
+    </joint>
+    <joint name="z_rail_link-v1_z_axis_joint" type="prismatic">
+        <origin xyz="-0.03474874 0.03474874 0.01" rpy="7.888609052210118e-31 -0.0 0.0" />
+        <parent link="z_rail_link-v1" />
+        <child link="z_slider_link-v1" />
+        <axis xyz="0.0 7.888609052210118e-31 1.0" />
+        <limit lower="0.0" upper="0.0875" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="z_slider_link-v1_arm_joint" type="revolute">
+        <origin xyz="0.1275 0.0052499999999999995 0.05700625000000001" rpy="1.5707963267948966 -0.0 0.0" />
+        <parent link="z_slider_link-v1" />
+        <child link="arm_link-v1" />
+        <axis xyz="-0.0 -0.0 1.0" />
+        <limit lower="-0.610865" upper="1.570796" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="z_rail_link-v1_camera_joint" type="fixed">
+        <origin xyz="-0.024748739999999998 0.024748739999999998 0.105" rpy="7.888609052210118e-31 -0.0 0.0" />
+        <parent link="z_rail_link-v1" />
+        <child link="camera-v1" />
+    </joint>
+    <gazebo>
+        <plugin name="omni_controller" filename="libgazebo_ros_planar_move.so">
+            <ros>
+                <namespace>/</namespace>
+                <remapping>cmd_vel:=cmd_vel</remapping>
+                <remapping>odom:=odom</remapping>
+            </ros>
+            <update_rate>100</update_rate>
+            <publish_rate>50</publish_rate>
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_link</robot_base_frame>
+            <covariance_x>0.0001</covariance_x>
+            <covariance_y>0.0001</covariance_y>
+            <covariance_yaw>0.01</covariance_yaw>
+        </plugin>
+    </gazebo>
+    <gazebo reference="lidar">
+        <sensor name="lidar_sensor" type="ray">
+            <always_on>true</always_on>
+            <visualize>true</visualize>
+            <update_rate>10</update_rate>
+            <ray>
+                <scan>
+                    <horizontal>
+                        <samples>360</samples>
+                        <resolution>1.000000</resolution>
+                        <min_angle>0.000000</min_angle>
+                        <max_angle>6.28319</max_angle>
+                    </horizontal>
+                </scan>
+                <range>
+                    <min>0.120000</min>
+                    <max>8.0</max>
+                    <resolution>0.015000</resolution>
+                </range>
+            </ray>
+            <plugin name="scan" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <remapping>~/out:=scan</remapping>
+                </ros>
+                <output_type>sensor_msgs/LaserScan</output_type>
+                <frame_name>lidar</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+    <gazebo reference="imu">
+        <sensor name="imu_sensor" type="imu">
+            <always_on>true</always_on>
+            <update_rate>100</update_rate>
+            <visualize>true</visualize>
+            <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+                <ros>
+                    <remapping>~/out:=imu</remapping>
+                </ros>
+                <initial_orientation_as_reference>false</initial_orientation_as_reference>
+            </plugin>
+        </sensor>
+    </gazebo>
+    <gazebo reference="camera-v1">
+        <sensor type="camera" name="camera_sensor">
+            <update_rate>30.0</update_rate>
+            <visualize>true</visualize>
+            <camera name="head">
+                <horizontal_fov>1.3962634</horizontal_fov>
+                <image>
+                    <width>640</width>
+                    <height>480</height>
+                    <format>R8G8B8</format>
+                </image>
+                <clip>
+                    <near>0.02</near>
+                    <far>300</far>
+                </clip>
+            </camera>
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <alwaysOn>true</alwaysOn>
+                <updateRate>0.0</updateRate>
+                <cameraName>littlebot/camera</cameraName>
+                <imageTopicName>image_raw</imageTopicName>
+                <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+                <frameName>camera-v1</frameName>
+            </plugin>
+        </sensor>
+    </gazebo>
+    <gazebo>
+        <plugin name="my_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+            <ros>
+                <remapping>~/out:=joint_states</remapping>
+            </ros>
+            <update_rate>30</update_rate>
+            <joint_name>z_rail_link-v1_z_axis_joint</joint_name>
+            <joint_name>z_slider_link-v1_arm_joint</joint_name>
+        </plugin>
+    </gazebo>
+
+    <gazebo>
+        <plugin name="my_arm_controller" filename="libgazebo_ros_joint_pose_trajectory.so">
+            <ros>
+                <remapping>set_joint_trajectory:=set_joint_trajectory</remapping>
+            </ros>
+            <update_rate>20</update_rate>
+            <frame_id>base_link</frame_id>
+            <joint_name>z_rail_link-v1_z_axis_joint</joint_name>
+            <joint_name>z_slider_link-v1_arm_joint</joint_name>
+        </plugin>
+    </gazebo>
+</robot>
