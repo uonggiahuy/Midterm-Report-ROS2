@@ -37,82 +37,6 @@
             </geometry>
         </collision>
     </link>
-    <link name="rear_left_wheel-v1_Component3">
-        <inertial>
-            <origin xyz="3.102295472068642e-08 -2.9861664205750358e-05 3.090283746010059e-08" rpy="0.0 0.0 0.0" />
-            <mass value="0.06587225705261189" />
-            <inertia ixx="1.851365021844267e-05" iyy="2.8353314654872332e-05" izz="1.8513608276880644e-05" ixy="1.157160629244632e-12" iyz="9.165735255197195e-13" ixz="-3.3038868068788775e-11" />
-        </inertial>
-        <visual name="rear_left_wheel-v1_Component3_visual">
-            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
-            <geometry>
-                <mesh filename="package://littlebot/meshes/rear_left_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </visual>
-        <collision name="rear_left_wheel-v1_Component3_collision">
-            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
-            <geometry>
-                <mesh filename="package://littlebot/meshes/rear_left_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision> 
-    </link>
-    <link name="front_right_wheel-v1_Component3">
-        <inertial>
-            <origin xyz="3.102295472068309e-08 -2.9861664205750358e-05 3.09028374601006e-08" rpy="0.0 0.0 0.0" />
-            <mass value="0.06587225705261189" />
-            <inertia ixx="1.8513650218442887e-05" iyy="2.8353314654872224e-05" izz="1.8513608276880427e-05" ixy="1.1571605219168365e-12" iyz="9.165735119671963e-13" ixz="-3.30388680620125e-11" />
-        </inertial>
-        <visual name="front_right_wheel-v1_Component3_visual">
-            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
-            <geometry>
-                <mesh filename="package://littlebot/meshes/front_right_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </visual>
-        <collision name="front_right_wheel-v1_Component3_collision">
-            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
-            <geometry>
-                <mesh filename="package://littlebot/meshes/front_right_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision> 
-    </link>
-    <link name="rear_right_wheel-v1_Component3">
-        <inertial>
-            <origin xyz="3.102295472067023e-08 -2.986166420575019e-05 3.090283746006602e-08" rpy="0.0 0.0 0.0" />
-            <mass value="0.06587225705261189" />
-            <inertia ixx="1.8513650218442847e-05" iyy="2.8353314654871743e-05" izz="1.851360827688088e-05" ixy="1.1571606425349658e-12" iyz="9.16573558587882e-13" ixz="-3.303886800259618e-11" />
-        </inertial>
-        <visual name="rear_right_wheel-v1_Component3_visual">
-            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
-            <geometry>
-                <mesh filename="package://littlebot/meshes/rear_right_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </visual>
-        <collision name="rear_right_wheel-v1_Component3_collision">
-            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
-            <geometry>
-                <mesh filename="package://littlebot/meshes/rear_right_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision> 
-    </link>
-    <link name="front_left_wheel-v1_Component3">
-        <inertial>
-            <origin xyz="3.1022954720686394e-08 -2.986166420575033e-05 3.090283746010059e-08" rpy="0.0 0.0 0.0" />
-            <mass value="0.06587225705261189" />
-            <inertia ixx="1.8513650218442636e-05" iyy="2.8353314654872176e-05" izz="1.851360827688021e-05" ixy="1.1571604124041954e-12" iyz="9.165735255197186e-13" ixz="-3.303886806201248e-11" />
-        </inertial>
-        <visual name="front_left_wheel-v1_Component3_visual">
-            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
-            <geometry>
-                <mesh filename="package://littlebot/meshes/front_left_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </visual>
-        <collision name="front_left_wheel-v1_Component3_collision">
-            <origin xyz="0.0 0.0 0.0" rpy="1.570796 0.0 0.0" />
-            <geometry>
-                <mesh filename="package://littlebot/meshes/front_left_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
     <link name="imu">
         <inertial>
             <origin xyz="0.0 0.0 0.0010000000000000002" rpy="0.0 -0.0 0.0" />
@@ -120,92 +44,167 @@
             <inertia ixx="4.2823999999999994e-08" iyy="9.582400000000004e-08" izz="1.3780000000000003e-07" ixy="0.0" iyz="2.9420910152566647e-24" ixz="0.0" />
         </inertial>
         <visual name="imu_visual">
-            <origin xyz="0.0 -2.0816681711721684e-19 0.0" rpy="3.141592653589792 5.551120747954053e-17 0.0" />
+            <origin xyz="0.0 0.0 0.0" rpy="3.141592653589793 -0.0 0.0" />
             <geometry>
                 <mesh filename="package://littlebot/meshes/imu.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="imu_collision">
-            <origin xyz="0.0 -2.0816681711721684e-19 0.0" rpy="3.141592653589792 5.551120747954053e-17 0.0" />
+            <origin xyz="0.0 0.0 0.0" rpy="3.141592653589793 -0.0 0.0" />
             <geometry>
                 <mesh filename="package://littlebot/meshes/imu.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
-    <link name="z_rail_link-v1">
+    <link name="front_right_wheel-v1_Component3">
         <inertial>
-            <origin xyz="-0.02474873999999618 0.024748739999999853 0.028304837586992166" rpy="0.0 -0.0 0.0" />
-            <mass value="0.14018305939730816" />
-            <inertia ixx="0.00021316725527848845" iyy="0.0002003118947012932" izz="7.963306166711707e-05" ixy="-1.4895652940352651e-18" iyz="-1.3920894350408395e-18" ixz="1.6046192152785466e-17" />
+            <origin xyz="3.102295472042764e-08 -2.9861664205750158e-05 3.090283746011757e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.06587225705261189" />
+            <inertia ixx="1.8513650218442684e-05" iyy="2.8353314654871573e-05" izz="1.8513608276880163e-05" ixy="1.1571605017239706e-12" iyz="9.165734685437386e-13" ixz="-3.303886807260619e-11" />
         </inertial>
-        <visual name="z_rail_link-v1_visual">
-            <origin xyz="-0.024748740000000203 0.024748739999999856 -0.0025000000000001245" rpy="-3.978567994365925e-15 1.644517855226035e-15 0.0" />
+        <visual name="front_right_wheel-v1_Component3_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
             <geometry>
-                <mesh filename="package://littlebot/meshes/z_rail_link-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="package://littlebot/meshes/front_right_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
-        <!-- Loi collision khien tay may khong nhac len duoc-->
-        <!--<collision name="z_rail_link-v1_collision">
-            <origin xyz="-0.024748740000000203 0.024748739999999856 -0.0025000000000001245" rpy="-3.978567994365925e-15 1.644517855226035e-15 0.0" />
+        <collision name="front_right_wheel-v1_Component3_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
             <geometry>
-                <mesh filename="package://littlebot/meshes/z_rail_link-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="package://littlebot/meshes/front_right_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
             </geometry>
-        </collision>-->
+        </collision>
     </link>
-    <link name="z_slider_link-v1">
+    <link name="front_left_wheel-v1_Component3">
         <inertial>
-            <origin xyz="0.07262986023269905 -0.00974999998285376 0.0534318937632977" rpy="0.0 -0.0 0.0" />
-            <mass value="0.018108528734218303" />
-            <inertia ixx="1.2893174146101334e-06" iyy="3.526773443850688e-05" izz="3.610135959525014e-05" ixy="-1.7036994834443656e-14" iyz="-1.109824919139947e-15" ixz="-1.2972991255317422e-06" />
+            <origin xyz="3.1022954720830595e-08 -2.9861664205750317e-05 3.090283746010059e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.06587225705261189" />
+            <inertia ixx="1.8513650218442623e-05" iyy="2.8353314654872095e-05" izz="1.851360827688021e-05" ixy="1.157160581724263e-12" iyz="9.165735119670315e-13" ixz="-3.303886805523621e-11" />
         </inertial>
-        <visual name="z_slider_link-v1_visual">
-            <origin xyz="0.06499999985098813 -0.009750000000000208 0.04950624543758318" rpy="2.220446049250313e-16 -4.2622790524526534e-16 -2.685647149300691e-33" />
+        <visual name="front_left_wheel-v1_Component3_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
             <geometry>
-                <mesh filename="package://littlebot/meshes/z_slider_link-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="package://littlebot/meshes/front_left_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
-        <!--<collision name="z_slider_link-v1_collision">
-            <origin xyz="0.06499999985098813 -0.009750000000000208 0.04950624543758318" rpy="2.220446049250313e-16 -4.2622790524526534e-16 -2.685647149300691e-33" />
+        <collision name="front_left_wheel-v1_Component3_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
             <geometry>
-                <mesh filename="package://littlebot/meshes/z_slider_link-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="package://littlebot/meshes/front_left_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
             </geometry>
-        </collision>-->
+        </collision>
     </link>
-    <link name="arm_link-v1">
+    <link name="rear_right_wheel-v1_Component3">
         <inertial>
-            <origin xyz="0.05147700960036703 0.028908753362395727 0.014749999999999984" rpy="0.0 -0.0 0.0" />
-            <mass value="0.03346092824173876" />
-            <inertia ixx="1.4135709947944155e-05" iyy="4.0639558219620134e-05" izz="5.18908004863961e-05" ixy="-2.168010812160753e-05" iyz="3.745579692758516e-18" ixz="6.659373031313309e-18" />
+            <origin xyz="3.102295472075925e-08 -2.986166420575028e-05 3.090283746010665e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.06587225705261189" />
+            <inertia ixx="1.8513650218442975e-05" iyy="2.835331465487208e-05" izz="1.851360827688055e-05" ixy="1.1571605039851175e-12" iyz="9.165735332462261e-13" ixz="-3.303886806734116e-11" />
         </inertial>
-        <visual name="arm_link-v1_visual">
-            <origin xyz="0.0493165864898511 0.019408416875444062 0.014749999999999992" rpy="-1.5707963267948943 3.654616716425319e-15 0.5121588783581007" />
+        <visual name="rear_right_wheel-v1_Component3_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
             <geometry>
-                <mesh filename="package://littlebot/meshes/arm_link-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="package://littlebot/meshes/rear_right_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
-        <!--<collision name="arm_link-v1_collision">
-            <origin xyz="0.0493165864898511 0.019408416875444062 0.014749999999999992" rpy="-1.5707963267948943 3.654616716425319e-15 0.5121588783581007" />
+        <collision name="rear_right_wheel-v1_Component3_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
             <geometry>
-                <mesh filename="package://littlebot/meshes/arm_link-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="package://littlebot/meshes/rear_right_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
             </geometry>
-        </collision>-->
+        </collision>
+    </link>
+    <link name="rear_left_wheel-v1_Component3">
+        <inertial>
+            <origin xyz="3.102295472096322e-08 -2.986166420575033e-05 3.090283746010059e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.06587225705261189" />
+            <inertia ixx="1.8513650218442636e-05" iyy="2.8353314654872176e-05" izz="1.8513608276880427e-05" ixy="1.1571606464475934e-12" iyz="9.165735119668851e-13" ixz="-3.303886807556501e-11" />
+        </inertial>
+        <visual name="rear_left_wheel-v1_Component3_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/rear_left_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="rear_left_wheel-v1_Component3_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/rear_left_wheel-v1_Component3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="z_rail_link-v5">
+        <inertial>
+            <origin xyz="0.02474874000000181 0.024748739999999922 0.05107759896613722" rpy="0.0 -0.0 0.0" />
+            <mass value="0.31575562187676676" />
+            <inertia ixx="0.000570845664483316" iyy="0.0005708456644839786" izz="0.00011138220861199317" ixy="4.264173667979578e-18" iyz="-7.052806199089826e-19" ixz="2.7538735181131813e-17" />
+        </inertial>
+        <visual name="z_rail_link-v5_visual">
+            <origin xyz="0.02474873999999984 0.02474873999999992 -0.0025000000000000356" rpy="-5.449290170266184e-16 3.830269434956793e-15 -3.944304526105099e-31" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/z_rail_link-v5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="z_rail_link-v5_collision">
+            <origin xyz="0.02474873999999984 0.02474873999999992 -0.0025000000000000356" rpy="-5.449290170266184e-16 3.830269434956793e-15 -3.944304526105099e-31" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/z_rail_link-v5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="z_slider_link-v5">
+        <inertial>
+            <origin xyz="0.07466764525346652 1.34378117301319e-09 0.10500000220511052" rpy="0.0 -0.0 0.0" />
+            <mass value="0.031761577565023694" />
+            <inertia ixx="2.559867967399628e-06" iyy="8.028355646136636e-05" izz="8.167462322133503e-05" ixy="-3.942596894986924e-12" iyz="-1.0588322302656455e-13" ixz="-2.5252239535533683e-12" />
+        </inertial>
+        <visual name="z_slider_link-v5_visual">
+            <origin xyz="2.9309887850104134e-16 -1.0213239453072002e-16 0.11500000000000053" rpy="3.1415926535897927 3.4360595006111733e-15 -2.8253475240680457e-15" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/z_slider_link-v5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="z_slider_link-v5_collision">
+            <origin xyz="2.9309887850104134e-16 -1.0213239453072002e-16 0.11500000000000053" rpy="3.1415926535897927 3.4360595006111733e-15 -2.8253475240680457e-15" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/z_slider_link-v5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
     </link>
     <link name="camera-v1">
         <inertial>
-            <origin xyz="-2.6645352591003756e-17 0.0 0.0075" rpy="0.0 -0.0 0.0" />
+            <origin xyz="2.3980817331903383e-16 -8.88178419700126e-17 0.007499999999999289" rpy="0.0 -0.0 0.0" />
             <mass value="0.044156249999999994" />
-            <inertia ixx="3.127734375000168e-06" iyy="1.6558593750001273e-06" izz="3.127734374999992e-06" ixy="1.3361336748022597e-36" iyz="2.4673473703533693e-36" ixz="0.0" />
+            <inertia ixx="3.1277343749997345e-06" iyy="1.6558593749994768e-06" izz="3.127734375000019e-06" ixy="-4.7330910824196473e-35" iyz="-9.660491564065596e-35" ixz="5.421010862427522e-20" />
         </inertial>
         <visual name="camera-v1_visual">
-            <origin xyz="0.000249999999999968 0.0 0.0" rpy="-7.888609052210118e-31 2.914335439641036e-16 0.0" />
+            <origin xyz="0.00025000000000023446 -8.881784197001253e-17 -7.105427357601002e-16" rpy="1.1339040066817218e-29 1.734723475976807e-16 -3.944304526105511e-31" />
             <geometry>
                 <mesh filename="package://littlebot/meshes/camera-v1.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="camera-v1_collision">
-            <origin xyz="0.000249999999999968 0.0 0.0" rpy="-7.888609052210118e-31 2.914335439641036e-16 0.0" />
+            <origin xyz="0.00025000000000023446 -8.881784197001253e-17 -7.105427357601002e-16" rpy="1.1339040066817218e-29 1.734723475976807e-16 -3.944304526105511e-31" />
             <geometry>
                 <mesh filename="package://littlebot/meshes/camera-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="arm_link-v1">
+        <inertial>
+            <origin xyz="0.05903895344928337 -2.7403028178625278e-05 -0.014749999999999486" rpy="0.0 -0.0 0.0" />
+            <mass value="0.03346092824173876" />
+            <inertia ixx="1.9782354348874334e-06" iyy="5.279703273267718e-05" izz="5.1890800486396535e-05" ixy="5.5152226988283357e-08" iyz="-4.235164736271502e-22" ixz="7.457913342337301e-18" />
+        </inertial>
+        <visual name="arm_link-v1_visual">
+            <origin xyz="0.0525000000000006 -0.007250000149011911 -0.014749999999999482" rpy="-1.570796326794897 -1.5777218104420236e-30 -3.436059500611175e-15" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/arm_link-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="arm_link-v1_collision">
+            <origin xyz="0.0525000000000006 -0.007250000149011911 -0.014749999999999482" rpy="-1.570796326794897 -1.5777218104420236e-30 -3.436059500611175e-15" />
+            <geometry>
+                <mesh filename="package://littlebot/meshes/arm_link-v1.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -214,60 +213,60 @@
         <parent link="base_link" />
         <child link="lidar" />
     </joint>
-    <!-- Sua loi trong rviz bang cach doi tu continuos sang fixed và dung thu vien planar-->
-    <joint name="base_link_rear_left_wheel_joint" type="fixed">
-        <origin xyz="-0.07 0.13 0.0125" rpy="-1.5707963267948966 -0.0 0.0" />
-        <parent link="base_link" />
-        <child link="rear_left_wheel-v1_Component3" />
-        <axis xyz="0.0 0.0 1.0" />
-    </joint>
-    <joint name="base_link_front_right_wheel_joint" type="fixed">
-        <origin xyz="0.07 -0.13 0.0125" rpy="1.5707963267948966 -0.0 0.0" />
-        <parent link="base_link" />
-        <child link="front_right_wheel-v1_Component3" />
-        <axis xyz="0.0 0.0 1.0" />
-    </joint>
-    <joint name="base_link_rear_right_wheel_joint" type="fixed">
-        <origin xyz="-0.07 -0.13 0.0125" rpy="1.5707963267948966 -0.0 0.0" />
-        <parent link="base_link" />
-        <child link="rear_right_wheel-v1_Component3" />
-        <axis xyz="0.0 0.0 1.0" />
-    </joint>
-    <joint name="base_link_front_left_wheel_joint" type="fixed">
-        <origin xyz="0.07 0.13 0.0125" rpy="-1.5707963267948966 -0.0 0.0" />
-        <parent link="base_link" />
-        <child link="front_left_wheel-v1_Component3" />
-        <axis xyz="0.0 0.0 1.0" />
-    </joint>
     <joint name="base_link_imu_joint" type="fixed">
         <origin xyz="0.0 0.0 0.0" rpy="3.141592653589793 -0.0 0.0" />
         <parent link="base_link" />
         <child link="imu" />
     </joint>
-    <joint name="base_link_pillar_fixed_joint" type="fixed">
-        <origin xyz="-0.01775126 -0.024748739999999998 0.07" rpy="0.0 -0.0 0.0" />
+    <joint name="base_link_front_right_wheel_joint" type="fixed">
+        <origin xyz="0.07 -0.128 0.0125" rpy="0 0 0" />
         <parent link="base_link" />
-        <child link="z_rail_link-v1" />
+        <child link="front_right_wheel-v1_Component3" />
+        <!--<axis xyz="0 1 0" />-->
     </joint>
-    <joint name="z_rail_link-v1_z_axis_joint" type="prismatic">
-        <origin xyz="-0.03474874 0.03474874 0.01" rpy="7.888609052210118e-31 -0.0 0.0" />
-        <parent link="z_rail_link-v1" />
-        <child link="z_slider_link-v1" />
-        <axis xyz="0.0 7.888609052210118e-31 1.0" />
-        <limit lower="0.0" upper="0.0875" effort="1000000" velocity="1000000" />
+    <joint name="base_link_front_left_wheel_joint" type="fixed">
+        <origin xyz="0.07 0.128 0.0125" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="front_left_wheel-v1_Component3" />
+        <!--<axis xyz="0 1 0" />-->
     </joint>
-    <joint name="z_slider_link-v1_arm_joint" type="revolute">
-        <origin xyz="0.1275 0.0052499999999999995 0.05700625000000001" rpy="1.5707963267948966 -0.0 0.0" />
-        <parent link="z_slider_link-v1" />
-        <child link="arm_link-v1" />
-        <axis xyz="-0.0 -0.0 1.0" />
-        <limit lower="-0.610865" upper="1.570796" effort="1000000" velocity="1000000" />
+    <joint name="base_link_rear_right_wheel_joint" type="fixed">
+        <origin xyz="-0.07 -0.128 0.0125" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="rear_right_wheel-v1_Component3" />
+        <!--<axis xyz="0 1 0" />-->
     </joint>
-    <joint name="z_rail_link-v1_camera_joint" type="fixed">
-        <origin xyz="-0.024748739999999998 0.024748739999999998 0.105" rpy="7.888609052210118e-31 -0.0 0.0" />
-        <parent link="z_rail_link-v1" />
+    <joint name="base_link_rear_left_wheel_joint" type="fixed">
+        <origin xyz="-0.07 0.128 0.0125" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="rear_left_wheel-v1_Component3" />
+        <!--<axis xyz="0 1 0" />-->
+    </joint>
+    <joint name="base_link_pillar_fixed_joint" type="fixed">
+        <origin xyz="-0.06724874 -0.024748739999999998 0.07" rpy="0.0 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="z_rail_link-v5" />
+    </joint>
+    <joint name="z_rail_link-v5_z_axis_joint" type="prismatic">
+        <origin xyz="0.024748739999999998 0.024748739999999998 0.005" rpy="-9.860761315262648e-32 -0.0 -5.153823899991262e-47" />
+        <parent link="z_rail_link-v5" />
+        <child link="z_slider_link-v5" />
+        <axis xyz="0.0 -9.860761315262648e-32 1.0" />
+        <limit lower="0.0" upper="0.095" effort="1000000" velocity="1000000" />
+        <dynamics damping="1.0" friction="1.0"/>
+    </joint>
+    <joint name="z_rail_link-v5_camera_joint" type="fixed">
+        <origin xyz="0.024748739999999998 0.024748739999999998 0.125" rpy="-9.860761315262648e-32 -0.0 -5.153823899991262e-47" />
+        <parent link="z_rail_link-v5" />
         <child link="camera-v1" />
     </joint>
+    <joint name="z_slider_link-v5_arm_joint" type="continuous">
+        <origin xyz="0.153 -0.015 0.105" rpy="1.5707963267948966 0.0 0.0" /> 
+        <parent link="z_slider_link-v5" />
+        <child link="arm_link-v1" />
+        <axis xyz="0.0 0.0 -1.0" /> <dynamics damping="1.0" friction="1.0"/>
+    </joint>
+    <!--gazebo plugin-->
     <gazebo>
         <plugin name="omni_controller" filename="libgazebo_ros_planar_move.so">
             <ros>
@@ -360,20 +359,17 @@
                 <remapping>~/out:=joint_states</remapping>
             </ros>
             <update_rate>30</update_rate>
-            <joint_name>z_rail_link-v1_z_axis_joint</joint_name>
-            <joint_name>z_slider_link-v1_arm_joint</joint_name>
+            <joint_name>z_rail_link-v5_z_axis_joint</joint_name>
+            <joint_name>z_slider_link-v5_arm_joint</joint_name>
         </plugin>
     </gazebo>
-
     <gazebo>
         <plugin name="my_arm_controller" filename="libgazebo_ros_joint_pose_trajectory.so">
-            <ros>
-                <remapping>set_joint_trajectory:=set_joint_trajectory</remapping>
-            </ros>
-            <update_rate>20</update_rate>
-            <frame_id>base_link</frame_id>
-            <joint_name>z_rail_link-v1_z_axis_joint</joint_name>
-            <joint_name>z_slider_link-v1_arm_joint</joint_name>
+            <update_rate>30</update_rate>
+            <joint_name>z_rail_link-v5_z_axis_joint</joint_name>
+            <joint_name>z_slider_link-v5_arm_joint</joint_name>
+            <topic_name>/set_joint_trajectory</topic_name>
+            <reference_link>base_link</reference_link>
         </plugin>
     </gazebo>
 </robot>
