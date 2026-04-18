@@ -43,12 +43,19 @@ def generate_launch_description():
             output='screen'
         ),
         
+        # Joint State Publisher GUI: debuging only
+        #Node(
+         #   package='joint_state_publisher_gui',
+          #  executable='joint_state_publisher_gui',
+           # name='joint_state_publisher_gui'
+        #),
         # 4. Bật Node Tay Máy
         Node(
             package='littlebot',
             executable='arm_controller.py',
             name='arm_controller',
-            output='screen'
+            output='screen',
+            parameters=[{'use_sim_time': True}] 
         ),
         
         # 5. Bật RViz kèm Config

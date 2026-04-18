@@ -11,7 +11,6 @@ install(DIRECTORY
   DESTINATION share/${PROJECT_NAME}
 )
 
-# Cài đặt file Python để có thể gọi bằng ros2 run
 install(PROGRAMS
   scripts/arm_controller.py
   DESTINATION lib/${PROJECT_NAME}
