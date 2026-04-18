@@ -12,7 +12,9 @@ Cảm biến:
 
 ## 2. Cấu trúc package
 arm_controller_package/
+
 ├── arm_keyboard_teleop.py
+
 littlebot/
 
 ├── CMakeLists.txt
