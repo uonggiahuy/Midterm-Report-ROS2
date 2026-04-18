@@ -1,20 +1,19 @@
 cmake_minimum_required(VERSION 3.8)
 project(littlebot)
 
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
-endif()
-
 find_package(ament_cmake REQUIRED)
 
-install(
-  DIRECTORY launch urdf meshes rviz config worlds
+install(DIRECTORY 
+  meshes 
+  urdf 
+  launch
+  rviz
   DESTINATION share/${PROJECT_NAME}
 )
 
-install(
-  PROGRAMS
-    scripts/arm_controller.py
+# Cài đặt file Python để có thể gọi bằng ros2 run
+install(PROGRAMS
+  scripts/arm_controller.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

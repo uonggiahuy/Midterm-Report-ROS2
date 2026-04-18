@@ -30,18 +30,15 @@ git clone <https://github.com/uonggiahuy/Midterm-Report-ROS2.git>
 cd ..
 colcon build --packages-select littlebot 
 source install/setup.bash
+chmod +x scripts/arm_controller.py
+
 ```
 
 ## 5. Cách chạy
-- Hiển thị robot trên RViz
-```bash
-ros2 launch littlebot display.launch.py
-```
-- Mở Gazebo và spawn robot
-```bash
-ros2 launch littlebot gazebo.launch.py
-```
+- 
 - Mở toàn bộ bringup
 ```bash
 ros2 launch littlebot bringup.launch.py
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/ros2_ws/install/littlebot/share 
+
 ```
