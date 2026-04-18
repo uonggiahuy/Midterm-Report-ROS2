@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# node dieu khien tay may tu dong di chuyen qua lai giua 2 diem Cartesian lien tuc
+# su dung IK de tinh toan goc va do dai khop
 import math
 import rclpy
 from rclpy.node import Node

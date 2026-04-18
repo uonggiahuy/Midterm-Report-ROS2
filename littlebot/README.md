@@ -11,8 +11,6 @@ Cảm biến:
 - Camera
 
 ## 2. Cấu trúc package
-arm_controller_package/
-├── arm_keyboard_teleop.py
 littlebot/
 
 ├── CMakeLists.txt
@@ -42,8 +40,8 @@ git clone < https://github.com/uonggiahuy/Midterm-Report-ROS2.git >
 cd ..
 colcon build --packages-select littlebot 
 source install/setup.bash
-chmod +x src/littlebot/scripts/arm_controller.py 
-chmod +x src/arm_controller_package/arm_keyboard_teleop.py
+chmod +x src/littlebot/scripts/arm_controller.py
+chmod +x /root/ros2_ws/src/arm_controller_package/arm_keyboard_teleop.py
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/ros2_ws/install/littlebot/share 
 ```
 
@@ -52,20 +50,8 @@ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/ros2_ws/install/littlebot/share
 ```bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
-- Teleop keyboard điều khiển tay may
-```bash
-cd /src/arm_controller_package
-python3 arm_keyboard_teleop.py
-```
-- Launch Rviz
-```bash
-ros2 launch littlebot display.launch.py
-```
 - Launch Gazebo + Rviz
 ```bash
 ros2 launch littlebot bringup.launch.py
 
 ```
-## 6. Node
-- Mặc định khi launch littlebot thì tay máy sẽ được điều khiển bằng bàn phím qua arm_keyboard_teleop.py
-- Nếu muốn tay máy chạy tự động, vào ```bash launch/bringup.launch.py``` bỏ comment phần 4 (node điều khiển tay máy). Sau đó build lại packages littlebot là được.
