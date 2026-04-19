@@ -68,6 +68,6 @@ ros2 launch littlebot display.launch.py
 ros2 launch littlebot bringup.launch.py
 
 ```
-## 6. Node
-- Mặc định khi launch littlebot thì tay máy sẽ được điều khiển bằng bàn phím qua arm_keyboard_teleop.py
-- Nếu muốn tay máy chạy tự động, vào ```bash launch/bringup.launch.py``` bỏ comment phần 4 (node điều khiển tay máy). Sau đó build lại packages littlebot là được.
+## 6. Note
+- Mặc định khi launch littlebot bringup.launch.py thì tay máy sẽ được điều khiển bằng bàn phím qua arm_keyboard_teleop.py
+- Nếu muốn tay máy chạy tự động, vào ```launch/bringup.launch.py``` bỏ comment phần 4 (node điều khiển tay máy). Sau đó build lại packages littlebot là được. Lúc này bringup sẽ chạy tự động tay máy.
