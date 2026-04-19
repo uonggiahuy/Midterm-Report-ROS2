@@ -11,25 +11,24 @@ Cảm biến:
 - Camera
 
 ## 2. Cấu trúc package
-arm_controller_package/
-
-├── arm_keyboard_teleop.py
-
-littlebot/
-
-├── CMakeLists.txt
-
-├── package.xml
-
-├── meshes/ (Chứa các file .stl của littlebot)
-
-├── urdf/ little_bot.urdf (mô hình robot)
-
-├── launch/ (Chứa file bringup khởi chạy Gazebo + Rviz)
-
-├── rviz/ (Chứa file config giao diện RViz)
-
-└── scripts/ (Chứa code Python điều khiển tay máy)
+.
+.
+├── 📦 arm_controller_package       # Package điều khiển tay máy
+│   └── 📄 arm_keyboard_teleop.py   # Node điều khiển từ bàn phím
+│
+└── 📦 littlebot                    # Package mô hình và cấu hình robot
+    ├── 📄 CMakeLists.txt           # File cấu hình biên dịch CMake
+    ├── 📄 package.xml              # Định nghĩa dependencies của package
+    ├── 📁 meshes                   # Chứa các file .stl
+    ├── 📁 urdf                     # Chứa file mô tả robot (LittleBot URDF)
+    │   └── 📄 little_bot.urdf
+    ├── 📁 launch                   # Các tệp khởi chạy hệ thống
+    │   ├── 🚀 bringup.launch.py    # Khởi chạy Gazebo + RViz2 
+    │   └── 🚀 display.launch.py    # Khởi chạy RViz2 + Joint State Publisher
+    ├── 📁 rviz                     # Cấu hình Rviz2
+    │   └── 📄 config.rviz
+    └── 📁 scripts                  # Mã chạy theo kịch bản
+        └── 📄 arm_controller.py    # Code Python điều khiển tay máy tự động
 
 ## 3. Môi trường
 - Ubuntu 24.04 - Docker container Ubuntu 22.04
@@ -68,6 +67,6 @@ ros2 launch littlebot display.launch.py
 ros2 launch littlebot bringup.launch.py
 
 ```
-## 6. Node
-- Mặc định khi launch littlebot thì tay máy sẽ được điều khiển bằng bàn phím qua arm_keyboard_teleop.py
-- Nếu muốn tay máy chạy tự động, vào ```bash launch/bringup.launch.py``` bỏ comment phần 4 (node điều khiển tay máy). Sau đó build lại packages littlebot là được.
+## 6. Note
+- Mặc định khi launch littlebot bringup.launch.py thì tay máy sẽ được điều khiển bằng bàn phím qua arm_keyboard_teleop.py
+- Nếu muốn tay máy chạy tự động, vào ```launch/bringup.launch.py``` bỏ comment phần 4 (node điều khiển tay máy). Sau đó build lại packages littlebot là được. Lúc này bringup sẽ chạy tự động tay máy.
