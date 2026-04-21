@@ -1,6 +1,9 @@
 # LittleBot - ROS2 Midterm Project - Uong Gia Huy
 
 ## 1. Mô tả
+
+![LittleBot trong Fusion 360](images/littlebot_fusion360.jpeg)
+
 Robot littlebot là robot omnidirectional 4 bánh mecanum, có 1 trục tay máy gồm:
 - 1 khớp prismatic (nâng hạ)
 - 1 khớp rotation (quay tay)
@@ -40,10 +43,12 @@ Cảm biến:
 - RViz2
 
 ## 4. Cài đặt
+- Về hướng dẫn cài đặt ROS2 Humble cùng các gói liên quan, tham khảo tại đây: https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
+
 - Clone Repo này về máy và build package:
 ```bash
 cd ~/your_workspace/src
-git clone < https://github.com/uonggiahuy/Midterm-Report-ROS2.git >
+git clone https://github.com/uonggiahuy/Midterm-Report-ROS2.git 
 cd ..
 colcon build --packages-select littlebot 
 source install/setup.bash
@@ -61,24 +66,30 @@ sudo apt install ros-humble-rviz-imu-plugin ros-humble-imu-tools -y
 ```
 
 ## 5. Cách chạy
-- Teleop keyboard điều khiển robot
+- Teleop keyboard điều khiển robot (có hướng dẫn trong terminal khi gọi teleop lên)
 ```bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
-- Teleop keyboard điều khiển tay may
+- Teleop keyboard điều khiển tay máy (có hướng dẫn trong terminal khi gọi teleop lên)
 ```bash
 cd /src/arm_controller_package
 python3 arm_keyboard_teleop.py
 ```
-- Launch Rviz
+- Launch Gazebo + Rviz (main bringup)
+```bash
+ros2 launch littlebot bringup.launch.py
+```
+![Gazebo View](images/gazebo_view.png)
+![Rviz2 View](images/rviz_view.png)
+- Launch Rviz + Joint State Publisher
 ```bash
 ros2 launch littlebot display.launch.py
 ```
-- Launch Gazebo + Rviz
-```bash
-ros2 launch littlebot bringup.launch.py
+![Rviz + Joint State Publisher View](images/rviz+jsb_view.png)
 
-```
-## 6. Note
+## 6. Graph
+![Rviz + Joint State Publisher View](littlebot/graphs/littlebot_rosgraph.png)
+
+## 7. Note
 - Mặc định khi launch littlebot bringup.launch.py thì tay máy sẽ được điều khiển bằng bàn phím qua arm_keyboard_teleop.py
 - Nếu muốn tay máy chạy tự động, vào ```launch/bringup.launch.py``` bỏ comment phần 4 (node điều khiển tay máy). Sau đó build lại packages littlebot là được. Lúc này bringup sẽ chạy tự động tay máy.
