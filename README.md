@@ -9,6 +9,7 @@ Cảm biến:
 - LiDAR
 - IMU
 - Camera
+
 Đây là dự án giữa kỳ của môn Lập trình Robot với ROS tại UET-VNU! 
 ## 2. Cấu trúc package
 ```bash
