@@ -9,6 +9,7 @@ def generate_launch_description():
     pkg_share = get_package_share_directory('littlebot')
     urdf_file = os.path.join(pkg_share, 'urdf', 'little_bot.urdf')
     rviz_file = os.path.join(pkg_share, 'rviz', 'config.rviz')
+    world_file = os.path.join(pkg_share, 'world', 'sample.world')
 
     with open(urdf_file, 'r') as infp:
         robot_desc = infp.read()
@@ -25,7 +26,7 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(
                 os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
             ),
-            launch_arguments={'gui': 'true', 'paused': 'false'}.items() 
+            launch_arguments={'world': world_file}.items() 
         ),
         
         # 2. Bật Robot State Publisher
@@ -44,14 +45,15 @@ def generate_launch_description():
         ),
         
         # 4. Bật Node Tay Máy
-        # chay node dieu khien tay may tu dong
-        Node(
-            package='littlebot',
-            executable='arm_controller.py',
-            name='arm_controller',
-            output='screen',
-            parameters=[{'use_sim_time': True}] 
-        ),
+        # chay node dieu khien tay may tu dong 
+        # bo comment, sau do build lai package littlebot neu muon node chay tay may tu dong
+        #Node(
+        #    package='littlebot',
+        #    executable='arm_controller.py',
+        #    name='arm_controller',
+        #    output='screen',
+        #    parameters=[{'use_sim_time': True}] 
+        #),
         
         # 5. Bật RViz kèm Config
         Node(

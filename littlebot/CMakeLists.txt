@@ -8,6 +8,7 @@ install(DIRECTORY
   urdf 
   launch
   rviz
+  world
   DESTINATION share/${PROJECT_NAME}
 )
 

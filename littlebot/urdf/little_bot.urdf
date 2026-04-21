@@ -115,7 +115,7 @@
     </link>
     <link name="imu">
         <inertial>
-            <origin xyz="0.0 0.0 0.0010000000000000002" rpy="0.0 -0.0 0.0" />
+            <origin xyz="0.0 0.0 0.0010000000000000002" rpy="0.0 0.0 0.0" />
             <mass value="0.0012720000000000001" />
             <inertia ixx="4.2823999999999994e-08" iyy="9.582400000000004e-08" izz="1.3780000000000003e-07" ixy="0.0" iyz="2.9420910152566647e-24" ixz="0.0" />
         </inertial>
@@ -144,7 +144,6 @@
                 <mesh filename="package://littlebot/meshes/z_rail_link-v1.stl" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
-        <!-- Loi collision khien tay may khong nhac len duoc-->
         <collision name="z_rail_link-v1_collision">
             <origin xyz="-0.024748740000000203 0.024748739999999856 -0.0025000000000001245" rpy="-3.978567994365925e-15 1.644517855226035e-15 0.0" />
             <geometry>
@@ -251,7 +250,7 @@
         <axis xyz="0.0 0.0 1.0" />
     </joint>
     <joint name="base_link_imu_joint" type="fixed">
-        <origin xyz="0.0 0.0 0.0" rpy="3.141592653589793 -0.0 0.0" />
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
         <parent link="base_link" />
         <child link="imu" />
     </joint>
